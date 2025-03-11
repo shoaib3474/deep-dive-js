@@ -8,7 +8,7 @@ function add(a, b, callback) {
 }
 
 // First method: Passing an anonymous function as the callback
-add(2, 34, function(values) {
+add(2, 34, function (values) {
     console.log(values); // Output: 36
 });
 
@@ -22,7 +22,6 @@ add(23, 34, showResult); // Call 'add' with 'showResult' as the callback
 // Third method: Using an arrow function as the callback
 add(23, 38, (val) => console.log(val)); // Output: 61
 
-add(23, 38, (val) => console.log(val))
-// fourth method 
-let resultFunction = add(23, 34, val => { })
-resultFunction
+// Fourth method: Storing the returned function and calling it later
+let resultFunction = add(23, 34, val => { }); // The callback does nothing
+resultFunction(); // Output: 57
