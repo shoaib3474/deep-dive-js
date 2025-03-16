@@ -10,12 +10,12 @@ const conditione = document.getElementById('condition');
 
 // Function to fetch weather data
 async function getData(cityName) {
-    const promise = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=6b2b3680598447e98dd92633243012&q=${cityName}`);
+    const promise = await fetch(`https://api.weatherapi.com/v1/forecast.json?key=YOU-API-KEY&q=${cityName}`);
     return await promise.json();
 }
 
 // Add an event listener to the button
-button.addEventListener('click', async() => {
+button.addEventListener('click', async () => {
     const city = cityName.value; // Get the city name from the input field
     let data = await getData(city); // Fetch weather data for the city
     console.log(data);
