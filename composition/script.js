@@ -21,3 +21,4 @@ const transforms = compose(addExclamation, toUpperCase, repeatTwice);
 
 
 console.log(transforms('Compose function'))
+
