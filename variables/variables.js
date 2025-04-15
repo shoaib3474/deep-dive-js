@@ -11,3 +11,4 @@ console.log(y);
 // 'const' has block scope and cannot be updated or re-declared
 const z = 30;  // Cannot be updated or re-declared
 console.log(z);
+
